@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#2E2E2E",
+              back: "#B00000",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="w-[1232px] h-[432px] border-2 border-blue-100 mx-auto flex items-center justify-center poppins-semibold mt-9"
+    >
+      <div>
+        <div
+          class="intrangle w-10 h-10 absolute bottom-[90%] right-[50%]"
+        ></div>
+        <div class="text-6xl text-clifford text-center leading-tight relative">
+          We`re here to make your <br />
+          website awesome
+        </div>
+        <div
+          class="flex mx-auto mt-10 bg-red-600 w-[208px] h-[48px] items-center p-2 gap-1 rounded-[8px]"
+        >
+          <img src="./public/images/whatsapp.png" />
+          <div class="text-white">Get in touch with us</div>
+        </div>
+        <div class="intrangle absolute right-[10%] w-16 h-16"></div>
+        <div class="trangle w-10 h-10 absolute left-[10%]"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="flex justify-center mt-10">
+        <img src="./public/images/Footer.png" />
+      </div>
+    </footer>
+  </body>
+</html>
