@@ -5,22 +5,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
               clifford: "#2E2E2E",
-              back: "#B00000",
+              customred: "#B00000",
+              grayclr: "#808080",
+              trueSubText: "#18191F",
             },
           },
         },
       };
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <!-- navigation navBar Section -->
     <div
+      class="flex items-center justify-around max-md:justify-between max-md:mx-[10%] max-md:mt-[3%] mt-[1%] lg:mx-[3%]"
+    >
+      <div>
+        <img
+          src="./public/images/navLogo.png"
+          class="md:w-[90.81px] w-[40px] md:h-[60px] h-[40px]"
+        />
+      </div>
+
+      <div
+        class="max-md:hidden poppins-semibold max-lg:text-[12px] text-[15px] border-b-2 border-customred"
+      >
+        Our Services
+      </div>
+
+      <i class="fa-solid fa-bars md:hidden"></i>
+
+      <div
+        class="flex lg:gap-[20%] gap-[12%] max-md:hidden max-lg:mr-12 mr-14 poppins-semibold max-lg:text-[12px] text-[15px]"
+      >
+        <div>About</div>
+        <div>Blog&News</div>
+        <div>Contact</div>
+      </div>
+
+      <div
+        class="flex gap-[8%] items-center max-md:hidden max-lg:mr-5 divide-x-2 poppins-semibold"
+      >
+        <div class="poppins-semibold max-lg:text-[12px] text-[15px]">
+          Account
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="./public/images/phone.png" class="max-lg:ml-2 ml-6" />
+          <div class="poppins-semibold max-lg:text-[13px] text-[16px]">
+            +2349067322844
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header Section -->
+
+    <div
+      class="HeaderContainer flex justify-around mt-8 items-center flex-wrap"
+    >
+      <div class="HeaderContainerLeft">
+        <div
+          class="flex max-md:justify-center gap-4 poppins-semibold text-[15px]"
+        >
+          <div class="text-customred border-b-2 border-customred">Hosting</div>
+          <div class="border-b-2">Domain</div>
+          <div class="border-b-2">SEO</div>
+          <div class="border-b-2">Email</div>
+        </div>
+
+        <div
+          class="poppins-bold text-6xl mt-14 max-lg:text-5xl max-md:text-center"
+        >
+          <div>
+            Premium Web <br />
+            Hosting for Your <br />
+            Website
+          </div>
+        </div>
+
+        <div
+          class="font-['Inter'] leading-normal text-grayclr mt-14 max-md:text-center"
+        >
+          Blazing fast web hosting for individuals and <br />businesses of all
+          sizes backed by 24x7x365 Support.
+        </div>
+        <div
+          class="HeaderContainerSmallScreenRight mt-10 relative md:hidden flex justify-center"
+        >
+          <div
+            class="intrangle w-7 h-7 absolute top-[13%] max-md:left-[78%]"
+          ></div>
+          <img
+            src="./public/images/womenWorking.png"
+            class="max-mad:w-[200px] max-md:h-[200px]"
+          />
+          <div class="trangle w-7 h-7 absolute bottom-[32%] right-[75%]"></div>
+          <div
+            class="intrangle absolute left-[90%] bottom-[8%] max-md:left-[75%] max-lg:w-[40px] max-lg:h-[40px]"
+          ></div>
+        </div>
+
+        <div
+          class="mt-14 flex gap-10 flex-wrap max-md:justify-center max-md:pb-4"
+        >
+          <input
+            type="button"
+            value="Create an Account"
+            class="bg-customred rounded-lg poppins-regular text-white px-3 py-3 max-md:text-[8px] max-md:py-2"
+          />
+          <input
+            type="button"
+            value="Choose your plan"
+            class="max-md:px-6 px-3 py-3 border-2 rounded-lg max-md:text-[8px]"
+          />
+        </div>
+      </div>
+
+      <div class="HeaderContainerRight mt-20 relative max-md:hidden">
+        <div
+          class="intrangle w-10 h-10 absolute left-[95%] top-[13%] max-lg:left-[90%]"
+        ></div>
+        <img
+          src="./public/images/womenWorking.png"
+          class="max-lg:w-[300px] max-lg:h-[300px]"
+        />
+        <div class="trangle w-10 h-10 absolute bottom-[32%] right-[95%]"></div>
+        <div
+          class="intrangle absolute left-[90%] bottom-[8%] max-lg:left-[85%] max-lg:w-[50px] w-[72px] max-lg:h-[50px] h-[72px]"
+        ></div>
+      </div>
+    </div>
+
+    <!-- True Cloud Web Hosting Container -->
+
+    <div class="TrueCouldContainer mt-20">
+      <div class="TrueCouldContainerLeft">
+        <div>
+          <div class="poppins-bold text-5xl">True Cloud Web Hosting</div>
+          <div class="font-['Inter'] font-normal text-[18px] text-trueSubText">
+            True Cloud Web Hosting All of the hosting packages we offer are
+            <br />
+            deployed instantly on our SSD powered cloud. We don’t use <br />
+            dedicated servers that operate on single pieces of hardware. Our
+            <br />
+            entire infrastructure is built to be reliable, secure, and scalable.
+          </div>
+        </div>
+      </div>
+      <div class="TrueCouldContainerRight grid grid-cols-3 grid-rows-2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- <div
       class="w-[1232px] h-[432px] border-2 border-blue-100 mx-auto flex items-center justify-center poppins-semibold mt-9"
     >
       <div>
@@ -46,6 +200,6 @@
       <div class="flex justify-center mt-10">
         <img src="./public/images/Footer.png" />
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
